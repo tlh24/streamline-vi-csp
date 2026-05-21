@@ -754,7 +754,7 @@ void print_statistics_final(void)
     }
 
     if (hamming_flag){
-	close(hamming_fp);
+	pclose(hamming_fp);
 	printf("Final distance to hamming target = %i\n", calc_hamming_dist(atom, hamming_target, numatom));
 	printf("Hamming distance data stored in %s\n", hamming_data_file);
     }
@@ -897,7 +897,7 @@ void init(char initfile[], int initoptions)
 	    fprintf(stderr, "Bad init file %s\n", initfile);
 	    exit(1);
 	}
-	close(infile);
+	pclose(infile);
 	/* printf("read %d values\n", i); */
     }
 

@@ -6,7 +6,7 @@ FLAGS=-D__DIR__='${CURDIR}' -Wall -Winline -O3 -Wno-unused-result -std=c++11
 #FLAGS=-Wall -Winline -O3 -funroll-loops
 #FLAGS=-g -Wall -pg -O0 
 #FLAGS=-g
-CC=g++
+CC=g++-14
 
 LDFLAGS=-lboost_iostreams -lm -lboost_system -lboost_filesystem
 
